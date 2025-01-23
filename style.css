@@ -1,0 +1,346 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .links_header{
+    display: flex;
+    gap: 50px;
+}
+header .links_header a {
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #B41F19;
+}
+
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+header .logo img{
+    width: 70px;
+}
+
+section{
+    height: 100%;
+    height: 480px;
+    background: url('./shop_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0 20px 200px;
+}
+section h1{
+    width: 600px;
+    font-size: 50px;
+    color: white;
+    font-weight: 400;
+}
+
+section a{
+    width: 100px;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+}
+section a:hover{
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+}
+
+.drinks{
+    margin-top: 50px;
+    padding: 0 50px;
+    gap: 5%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: 5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+/* COFFEE */
+.hot_drinks{
+    display: flex;
+    padding: 50px 0;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 5px 5px 15px 1px rgba(128,126,128,1);
+-moz-box-shadow: 5px 5px 15px 1px rgba(128,126,128,1);
+box-shadow: 5px 5px 15px 1px rgba(128,126,128,1);    
+    border-radius: 20px;
+}
+.hot_drinks h2{
+    font-size: 50px;
+    margin-top: 0;
+    color: black;
+    border-top: 2px solid #B41F19;
+    border-bottom: 2px solid #B41F19;
+}
+.drinks_hot_coffee{
+    width: calc(100% - 80px);
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.drinks_hot_drinks{
+    width: calc(100% - 60px);
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.drink{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(155, 138, 138, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+.drink:hover{
+    background-color: rgba(155, 138, 138, 0.5);
+    transform: scale(1.01);
+}
+.drink img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+}
+
+/* BIO TEAS */
+
+.bio_teas{
+    margin-top: 120px;
+    padding: 0 50px;
+    gap: 5%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, auto-fit, minmax(10rem, 1fr));
+    grid-gap: 5rem;
+    place-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.bio_teas h2{
+    font-size: 50px;
+    margin-top: 0;
+    color: black;
+    border-top: 2px solid #B41F19;
+    border-bottom: 2px solid #B41F19;
+    
+}
+.teas{
+    width: 100%;
+    gap: 5%;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: 5rem;
+    transition: all 0.3s ease-in-out;
+}
+.tea_drink{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 5px 5px 15px 1px rgba(128,126,128,1);
+-moz-box-shadow: 5px 5px 15px 1px rgba(128,126,128,1);
+box-shadow: 5px 5px 15px 1px rgba(128,126,128,1);    
+    border-radius: 20px;
+
+    width: calc(100% - 60px);
+    padding: 50px 30px;
+    gap: 20px;
+}
+.teas h2{
+    font-size: 50px;
+    margin-top: 0;
+    color: black;
+    border-top: 2px solid #B41F19;
+    border-bottom: 2px solid #B41F19;
+}
+
+.tea{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(155, 138, 138, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+.tea:hover{
+    background-color: rgba(155, 138, 138, 0.5);
+    transform: scale(1.01);
+}
+.tea img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+}
+footer{
+    background: url('./footer_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    width: 100%;
+    bottom: 0;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    z-index: 1;
+}
+footer::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(29 100% 5% / 0.23));
+    z-index: -1;
+}
+.footer_top{
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: row;
+}
+.footer_left{
+    width: 50%;
+    padding:40px 0 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.footer_left h3{
+    font-size: 30px;
+    text-align: center;
+}
+.footer_left a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+.footer_right{
+    width: 50%;
+    padding:40px 0 0 50px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.footer_right h3{
+    font-size: 30px;
+    text-align: center;
+}
+.footer_right a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+.footer_right a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.footer_bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+@media only screen and (min-width: 1400px){
+    .drinks{
+        padding: 0 120px;
+    }
+    .bio_teas{
+        padding: 0 120px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .drinks{
+        width: 100%;
+        grid-template-columns: auto;
+        place-content: center;
+        padding: 0;
+    }
+    .hot_drinks{
+        width: 100%;
+    }
+    .teas{
+        width: 100%;
+        grid-template-columns: auto;
+        place-content: center;
+        padding: 0;
+    }
+    .tea_drink{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 800px){
+    footer{
+        height: max-content;
+        padding-bottom: 50px;
+    }
+    .footer_top{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 600px){
+    .drinks{
+        width: 100%;
+        grid-template-columns: auto;
+        place-items: center;
+        padding: 0;
+    }
+    .hot_drinks{
+        width: 90%;
+    }
+    .drinks h2{
+        font-size: 30px;
+    }
+    .tea_drink{
+        width: 90%;
+        grid-template-columns: auto;
+        place-content: center;
+    }
+    .bio_teas h2{
+        font-size: 30px;
+    }
+}
